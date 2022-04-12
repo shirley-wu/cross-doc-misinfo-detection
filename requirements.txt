@@ -1,0 +1,6 @@
+lxml
+tqdm
+numpy
+scikit-learn==1.0.1
+torch==1.10.0
+transformers==4.12.0
