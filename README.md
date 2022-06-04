@@ -1,4 +1,4 @@
-This repository is for our NAACL2022 paper: Cross-document Misinformation Detection based on Event Graph Reasoning
+This repository is for our NAACL2022 paper: [Cross-document Misinformation Detection based on Event Graph Reasoning](https://blender.cs.illinois.edu/paper/crossdocdisinfo2022.pdf)
 
 ## Requirements
 
