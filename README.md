@@ -21,6 +21,8 @@ Each directory is organized as follows:
         │   └── {entity,relation,event}.cs   # IE outputs of entity / relation / event extraction in cold-start format
         └── ...
 
+For both document-level and event-level detection,  **0 stands for real and 1 stands for fake**.
+
 ## Training
 
 Specify `$DATA $OUTPUT $EPOCH` before you continue.
