@@ -52,8 +52,8 @@ if __name__ == "__main__":
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     assert args.scheduler == 'linear-warmup'
     assert args.warmup > 0
-    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.num_epochs * len(dataloader_train),
-                                                num_training_steps=args.warmup)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup,
+                                                num_training_steps=args.num_epochs * len(dataloader_train) // args.accum-step)
     best_doc_metric = - np.inf
     best_event_metric = - np.inf
     loss_d_fn = nn.CrossEntropyLoss(
