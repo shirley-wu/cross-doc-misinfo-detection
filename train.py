@@ -53,7 +53,7 @@ if __name__ == "__main__":
     assert args.scheduler == 'linear-warmup'
     assert args.warmup > 0
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup,
-                                                num_training_steps=args.num_epochs * len(dataloader_train) // args.accum-step)
+                                                num_training_steps=args.num_epochs * len(dataloader_train) // args.accum_step)
     best_doc_metric = - np.inf
     best_event_metric = - np.inf
     loss_d_fn = nn.CrossEntropyLoss(
